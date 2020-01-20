@@ -1,23 +1,3 @@
-When we navigate to localhost:8000/blog, the program first looks to django_project/urls.py to handle /blog
+This project follows a tutorial provided by Corey Schafer for the implementation of a blog web application using Python/Django.  I've had a personal interest in exploring the Python language further and wanted to dive into something that also included databases, user authentication, GUI's, and popular frameworks regularly used in industry today.  For anyone else looking for similar experience, Schafer has been an amazing resource outside of the usual academic curriculum and I can't recommend him enough.  You can find him here: https://www.youtube.com/user/schafer5/about
 
-The script says to the app, 
-    "Hey... someone navigated to /blog, is there an application that matches this?"
-
-The app responds, "Yes!"  --path('blog/', include('blog.urls')
-
-Script:  "Thanks, I'll process this /blog request to transfer to blog/urls.py
-
-From blog/urls.py, Script asks,
-    "I'm here now with my leftover empty string, is there any pattern that matches this?"
-
-Script: "Yes!"  --path('', views.home, name='blog-home')
-
-Script:  "Thanks, I'll head to views.py and look for the function named 'home' to find           out what to do."
-
-From views.py:
-
-def home(request):
-    return HttpResponse('<h1>Blog Home</h1>)
-
-
-NOTE:  After this explanation was given, we reomoved /blog from project/urls.py to ensure that localhost:8000 is the home directory for blog
+More documentation and updates to follow.
